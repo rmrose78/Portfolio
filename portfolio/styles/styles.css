@@ -1,0 +1,171 @@
+/* Script */
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* Color Scheme */
+
+  /* https://hookagency.com/blog/website-color-schemes/ */
+  /* --color-1-: #12232e;
+  --color-2-: #007cc7;
+  --color-3-: #4da8da;
+  --color-4-: #203647;
+  --color-5-: #eefbfb; */
+
+  /* https://hookagency.com/blog/website-color-schemes/ */
+  /* 
+  --color-1-: #164a41;
+  --color-2-: #4d774e;
+  --color-3-: #9dc88d;
+  --color-4-: #f1b24a;
+  --color-5-: #ffffff; */
+
+  /* https://www.pinterest.com/pin/798614946435614249/ */
+  /* --color-1-: #205072;
+  --color-2-: #329d9c;
+  --color-3-: #56c596;
+  --color-4-: #7be495;
+  --color-5-: #cff4d2; */
+
+  /* https://visme.co/blog/website-color-schemes/ */
+  --color-1-: #0b0c10;
+  --color-2-: #1f2833;
+  --color-3-: #c5c6c7;
+  --color-4-: #66fcf1;
+  --color-5-: #45a29e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Gemunu Libre", Arial, Helvetica, sans-serif;
+  background-color: var(--color-2-);
+  color: white;
+  margin: 1rem;
+}
+
+/* Nav Bar */
+
+.navbar-navItems {
+  display: none;
+}
+
+.navbar-socialItems {
+  display: none;
+}
+
+.navbar-container {
+  width: 100vw;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: var(--color-4-);
+}
+
+/* Nav Menu */
+.navbar-toggle--menuText {
+  font-size: 1rem;
+  color: var(--color-3-);
+}
+
+.navMenu-background {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  height: 400px;
+  background-color: var(--color-2-);
+  top: 0;
+  font-size: 2rem;
+}
+
+.navMenu-navItems ul li a {
+  text-decoration: none;
+  color: var(--color-3-);
+}
+
+.navMenu-socialItems ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navMenu-socialItems ul li a i {
+  color: var(--color-3-);
+}
+
+/* Header */
+.header-textContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.title {
+  color: var(--color-5-);
+  font-size: 0.75rem;
+}
+
+.hello {
+  color: var(--color-4-);
+  font-size: 8rem;
+}
+
+.bio {
+  color: var(--color-3-);
+}
+
+/* ------------- Responsive Desktop ---------------- */
+@media (min-width: 450px) {
+  /* navbar */
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-contents {
+    color: var(--color-5-);
+    font-size: 1rem;
+  }
+  .navbar-contents li a {
+    text-decoration: none;
+    color: var(--color-5-);
+    font-size: 1rem;
+  }
+
+  .navbar-navItems--contents,
+  .navbar-socialItems--contents {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+  }
+
+  .navItem-portfolio-link {
+    padding: 0 40px;
+  }
+
+  .socialItems-Github--icon a i {
+    padding-left: 15px;
+  }
+
+  .navbar-navItems {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .navbar-socialItems {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  /* Header */
+}
