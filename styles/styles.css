@@ -1,30 +1,31 @@
-/* Script */
+/* font import */
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* Color Palette */
 :root {
-  /* Color Scheme */
+  --color-white-: #fff;
 
   /* https://hookagency.com/blog/website-color-schemes/ */
   /* --color-1-: #12232e;
-  --color-2-: #007cc7;
-  --color-3-: #4da8da;
-  --color-4-: #203647;
-  --color-5-: #eefbfb; */
+  --color-2-: #203647;
+  --color-3-: #eefbfb;
+  --color-4-: #4da8da;
+  --color-5-: #007cc7; */
 
   /* https://hookagency.com/blog/website-color-schemes/ */
-  /* 
-  --color-1-: #164a41;
-  --color-2-: #4d774e;
-  --color-3-: #9dc88d;
+
+  /* --color-1-: #4d774e;
+  --color-2-: #164a41;
+  --color-3-: #dadada;
   --color-4-: #f1b24a;
-  --color-5-: #ffffff; */
+  --color-5-: #9dc88d; */
 
   /* https://www.pinterest.com/pin/798614946435614249/ */
-  /* --color-1-: #205072;
-  --color-2-: #329d9c;
-  --color-3-: #56c596;
+  /* --color-1-: #329d9c;
+  --color-2-: #205072;
+  --color-3-: #cff4d2;
   --color-4-: #7be495;
-  --color-5-: #cff4d2; */
+  --color-5-: #56c596; */
 
   /* https://visme.co/blog/website-color-schemes/ */
   --color-1-: #0b0c10;
@@ -35,6 +36,7 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -45,35 +47,85 @@
 
 body {
   font-family: "Gemunu Libre", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
   background-color: var(--color-2-);
-  color: white;
-  margin: 1rem;
+  color: var(--color-white-);
+  margin: 1rem 1.5rem;
 }
 
 /* Nav Bar */
-
-.navbar-navItems {
+.navbar-menu {
   display: none;
 }
 
-.navbar-socialItems {
+.navbar-social {
   display: none;
 }
 
-.navbar-container {
-  width: 100vw;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.5rem;
+.navbar-logo--container {
+  width: 75.4px;
+  height: 23.2167px;
+}
+.logo {
   color: var(--color-4-);
 }
 
-/* Nav Menu */
-.navbar-toggle--menuText {
-  font-size: 1rem;
-  color: var(--color-3-);
+.fa-bars {
+  color: var(--color-5-);
 }
+
+.navbar-contents li,
+.navbar-contents a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-5-);
+  font-size: 1.5rem;
+}
+
+.navbar-contents li:hover,
+.navbar-contents a:hover,
+.navbar-toggle {
+  color: var(--color-4-);
+  transition: all 0.3s ease 0s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 500px) {
+  .navbar-contents li,
+  .navbar-contents a {
+    font-size: 1.2rem;
+  }
+
+  .navbar-toggle {
+    display: none;
+    align-items: center;
+  }
+
+  .navbar-menu {
+    display: inline-block;
+  }
+
+  .navbar-social {
+    display: inline-block;
+  }
+
+  .navbar-menu ul,
+  .navbar-social ul {
+    display: flex;
+  }
+
+  .navbar-contents li {
+    padding: 0px 10px;
+  }
+}
+
+/* Nav Menu */
 
 .navMenu-background {
   display: none;
@@ -101,71 +153,40 @@ body {
 }
 
 /* Header */
+
+header {
+}
+
 .header-textContainer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .title {
   color: var(--color-5-);
-  font-size: 0.75rem;
+  font-size: 1;
 }
 
 .hello {
   color: var(--color-4-);
-  font-size: 8rem;
+  font-size: 8.5rem;
 }
 
 .bio {
   color: var(--color-3-);
+  font-size: 1rem;
 }
 
 /* ------------- Responsive Desktop ---------------- */
-@media (min-width: 450px) {
-  /* navbar */
-  .navbar-toggle {
-    display: none;
-  }
-
-  .navbar-contents {
-    color: var(--color-5-);
-    font-size: 1rem;
-  }
-  .navbar-contents li a {
-    text-decoration: none;
-    color: var(--color-5-);
-    font-size: 1rem;
-  }
-
-  .navbar-navItems--contents,
-  .navbar-socialItems--contents {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-  }
-
-  .navItem-portfolio-link {
-    padding: 0 40px;
-  }
-
-  .socialItems-Github--icon a i {
-    padding-left: 15px;
-  }
-
-  .navbar-navItems {
-    display: inline-block;
-    margin: 0 auto;
-  }
-
-  .navbar-socialItems {
-    display: inline-block;
-    justify-content: center;
-  }
-
-  /* Header */
-}
