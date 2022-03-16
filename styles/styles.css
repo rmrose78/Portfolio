@@ -13,7 +13,6 @@
   --color-5-: #007cc7; */
 
   /* https://hookagency.com/blog/website-color-schemes/ */
-
   /* --color-1-: #4d774e;
   --color-2-: #164a41;
   --color-3-: #dadada;
@@ -26,6 +25,13 @@
   --color-3-: #cff4d2;
   --color-4-: #7be495;
   --color-5-: #56c596; */
+
+  /* https://colorhunt.co/palettes/popular */
+  /* --color-1-: #222831;
+  --color-2-: #393e46;
+  --color-3-: #eeeeee;
+  --color-4-: #00adb5;
+  --color-5-: #00acb554; */
 
   /* https://visme.co/blog/website-color-schemes/ */
   --color-1-: #0b0c10;
@@ -45,15 +51,33 @@
   overflow: hidden;
 }
 
+html {
+  /* background: linear-gradient(#1f2833, #1f283395),
+    url("/assets/photos/space.jpg"); */
+  background: linear-gradient(#1f2833, #1f283395),
+    url("/assets/photos/mountain.jpg");
+  /* background: linear-gradient(#164a4199, #164a4195),
+    url("/assets/photos/working.jpg"); */
+  /* background: linear-gradient(#203647, #20364795),
+    url("/assets/photos/mountain.jpg"); */
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+  height: 100vh;
+}
+
 body {
   font-family: "Gemunu Libre", Arial, Helvetica, sans-serif;
   letter-spacing: 0.1rem;
-  background-color: var(--color-2-);
   color: var(--color-white-);
   margin: 1rem 1.5rem;
 }
 
 /* Nav Bar */
+
 .navbar-menu {
   display: none;
 }
@@ -76,7 +100,7 @@ body {
 
 .navbar-contents li,
 .navbar-contents a {
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-decoration: none;
   color: var(--color-5-);
   font-size: 1.5rem;
@@ -154,9 +178,6 @@ nav {
 
 /* Header */
 
-header {
-}
-
 .header-textContainer {
   display: flex;
   flex-direction: column;
@@ -168,6 +189,7 @@ header {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .name {
