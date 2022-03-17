@@ -125,6 +125,10 @@ nav {
     display: none;
   }
 
+  .fa-bars:hover {
+    transition: all 0.3s ease 0s;
+  }
+
   .navbar-contents li,
   .navbar-contents a {
     font-size: 1.2rem;
