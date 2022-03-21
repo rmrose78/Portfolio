@@ -172,7 +172,13 @@ nav {
   z-index: 99;
   font-size: 2rem;
   background-color: var(--color-2-);
-  opacity: 0.9;
+}
+
+#blur {
+  position: absolute;
+  width: auto;
+  height: auto;
+  filter: blur(2rem);
 }
 
 .menu-top {
