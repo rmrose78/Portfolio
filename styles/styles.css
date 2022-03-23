@@ -64,7 +64,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 50% 1%;
+  background-position: center;
   height: 100vh;
   max-height: 100%;
 }
@@ -199,6 +199,7 @@ nav {
 
 .menu-items {
   width: 400px;
+  padding-top: 100px;
 }
 
 .menu-items ul li a {
@@ -210,7 +211,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .menu-items--social ul {

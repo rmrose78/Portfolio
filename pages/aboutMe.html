@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/aboutMe.css" />
+
+    <title>Ryan Rose Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar-logo--container navbar-contents">
+        <a class="logo" href="../index.html">RR</a>
+      </div>
+      <div onclick="showHideMenu()" class="nav-toggle navbar-contents">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navbar-menu">
+        <ul class="navbar-menu--contents navbar-contents">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/pages/portfolio.html">Portfolio</a></li>
+          <li><a href="/pages/aboutMe.html">About Me</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-social">
+        <ul class="navbar-social--contents navbar-contents">
+          <li>
+            <a href="https://github.com/rmrose78"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li class="socialItems-Github--icon navbar-contents">
+            <a href="https://www.linkedin.com/in/ryan-rose-272626170/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+    <div id="menu-container">
+      <div class="menu-top">
+        <div class="navbar-logo--container navbar-contents menu-top--items">
+          <a class="logo" href="../index.html">RR</a>
+        </div>
+        <div
+          onclick="showHideMenu()"
+          class="nav-toggle navbar-contents menu-top--items"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="menu-items">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/pages/portfolio.html">Portfolio</a></li>
+          <li><a href="/pages/aboutMe.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <div class="menu-items--social">
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/ryan-rose-272626170/"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/rmrose78"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <section>
+      <div class="about-container">
+        <h1>About Me</h1>
+        <div class="about-content">
+          <div class="img-container">
+            <img
+              src="/assets/photos/P1-modified.png"
+              alt="Picture of Ryan Rose the author of site."
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+              porro nulla deserunt doloribus voluptatum numquam, nemo fuga
+              cupiditate modi aperiam et libero quaerat nisi. In adipisci
+              consequuntur, voluptatibus distinctio modi animi similique libero.
+              Aperiam cupiditate nihil voluptatem reprehenderit excepturi
+              tenetur ut magni ipsum nam unde libero a in consequuntur quasi
+              rerum expedita laborum id nulla fugit est vero, sed, placeat at
+              eveniet!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../scripts/dropDownMobile.js"></script>
+  </body>
+</html>
