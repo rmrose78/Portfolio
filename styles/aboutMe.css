@@ -27,7 +27,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  box-shadow: 0 0 25px 0 #66fcf125;
+  box-shadow: 0 0 20px 0 #eefbfb30;
 }
 
 .about-container > h1 {
@@ -49,6 +49,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .img-container > img {
