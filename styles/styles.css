@@ -42,6 +42,24 @@
   --color-5-: #45a29e; */
 }
 
+:root[color-mode="dark"] {
+  --color-white-: #fff;
+  --color-1-: #12232e;
+  --color-2-: #203647;
+  --color-3-: #eefbfb;
+  --color-4-: #4da8da;
+  --color-5-: #007cc7;
+}
+
+:root[color-mode="light"] {
+  --color-white-: #fff;
+  --color-3-: #12232e;
+  --color-2-: #203647;
+  --color-1-: #eefbfb;
+  --color-4-: #4da8da;
+  --color-5-: #007cc7;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -53,21 +71,21 @@
 
 body {
   font-family: "Gemunu Libre", Arial, Helvetica, sans-serif;
+  font-weight: bold;
   letter-spacing: 0.1rem;
   color: var(--color-white-);
   margin: 1rem 1.5rem;
 }
 
 body {
-  content: "";
   background: linear-gradient(#1f2833, #1f283395),
     url("/assets/photos/space.jpg");
-  /* background: linear-gradient(#1f2833, #1f283390),
-  url("/assets/photos/mountain.jpg"); */
+  /* background: linear-gradient(#eefbfb99, #4da8da99),
+    url("/assets/photos/space_lightMode.jpg"); */
   /* background: linear-gradient(#164a4199, #164a4195),
-  url("/assets/photos/working.jpg"); */
+    url("/assets/photos/working.jpg"); */
   /* background: linear-gradient(#203647, #20364795),
-  url("/assets/photos/mountain.jpg"); */
+    url("/assets/photos/mountain.jpg"); */
 
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -79,165 +97,6 @@ body {
   max-height: 100%;
 }
 
-.body {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-}
-/* Nav Bar */
-
-.navbar-menu {
-  display: none;
-}
-
-.navbar-social {
-  display: none;
-}
-
-.navbar-logo--container {
-  width: 75.4px;
-  height: 23.2167px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  color: var(--color-4-);
-  background-color: var(--color-2-);
-  border: var(--color-1-) solid 3px;
-  padding: 1px 5px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-family: "Dela Gothic One", "Open Sans", sans-serif;
-  border-radius: 0.5rem;
-}
-
-.logo:hover {
-  background-color: var(--color-4-);
-  color: var(--color-3-);
-}
-
-.fa-bars {
-  color: var(--color-5-);
-}
-
-.navbar-contents li,
-.navbar-contents li a {
-  font-size: 0.75rem;
-  text-decoration: none;
-  list-style-type: none;
-  color: var(--color-5-);
-  font-size: 1.5rem;
-  text-transform: capitalize;
-}
-
-.navbar-contents li a:hover,
-.navbar-toggle {
-  color: var(--color-4-);
-  transition: all 0.3s ease 0s;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (min-width: 720px) {
-  .nav-toggle {
-    display: none;
-  }
-
-  .fa-bars:hover {
-    transition: all 0.3s ease 0s;
-  }
-
-  .navbar-toggle {
-    display: none;
-    align-items: center;
-  }
-
-  .navbar-menu {
-    display: inline-block;
-  }
-
-  .navbar-social {
-    display: inline-block;
-  }
-
-  .navbar-menu ul,
-  .navbar-social ul {
-    display: flex;
-  }
-
-  .navbar-contents li {
-    padding: 0px 10px;
-  }
-}
-
-/* Nav Menu */
-
-#menu-container {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99;
-  font-size: 2rem;
-  background-color: var(--color-2-);
-}
-
-.menu-top {
-  position: absolute;
-  top: 0;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 1.5rem;
-}
-
-.menu-top--items {
-  height: 100%;
-  padding: 16px 0 20px 11px;
-}
-
-.menu-items {
-  width: 400px;
-  padding-top: 100px;
-}
-
-.menu-items ul li a {
-  text-decoration: none;
-  color: var(--color-4-);
-}
-
-.menu-items ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-.menu-items--social ul {
-  display: flex;
-  justify-content: center;
-}
-
-.menu-items--social ul li {
-  padding: 0 60px;
-}
-
-@media (min-width: 720px) {
-  #menu-container {
-    display: none;
-  }
-}
 /* Header */
 
 .header-textContainer {
@@ -294,6 +153,18 @@ nav {
   .bio {
     font-size: 1.25rem;
   }
+}
+
+/* Darkmode */
+.darkMode-toggle {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.fa-sun {
+  color: var(--color-4-);
+  font-size: 1.5rem;
 }
 
 /* Animista Library */

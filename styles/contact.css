@@ -3,7 +3,6 @@ html {
 }
 
 section {
-  margin: 20px 0 0 0;
   height: 85vh;
   width: 100vw;
   display: flex;
@@ -20,18 +19,14 @@ section {
 /* Form */
 
 #form-bg-container {
+  margin-top: 30vw;
   position: absolute;
   width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  /* box-shadow: 0 0 20px 0 rbga(0, 0, 0, 0.2); */
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  /* box-shadow: 20px, 20px, 50px rbga(0, 0, 0, 0.5); */
 }
 
 .form-container {
@@ -54,6 +49,7 @@ section {
 @media (min-width: 720px) {
   #form-bg-container {
     width: 638.4px;
+    margin-top: 5vw;
   }
 
   .form-container {
