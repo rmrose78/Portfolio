@@ -26,7 +26,7 @@ nav {
 }
 
 .logo {
-  color: var(--color-4-);
+  color: var(--logo-text-);
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -41,7 +41,7 @@ nav {
 
 .logo-span {
   font-size: 1rem;
-  color: var(--color-5-);
+  color: var(--logo-span-);
 }
 
 .fa-bars {
@@ -54,7 +54,7 @@ nav {
   font-size: 0.75rem;
   text-decoration: none;
   list-style-type: none;
-  color: var(--color-5-);
+  color: var(--nav-text-);
   font-size: 1.3rem;
   text-transform: capitalize;
 }

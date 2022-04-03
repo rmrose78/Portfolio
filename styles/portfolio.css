@@ -7,7 +7,7 @@ section {
   width: 100vw;
   display: flex;
   justify-content: center;
-  color: var(--color-4-);
+  color: var(--section-labels-);
 }
 
 @media (min-width: 720px) {

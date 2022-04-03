@@ -5,28 +5,29 @@ function showHideMenu() {
 }
 
 // cursor
-document.addEventListener("DOMContentLoaded", () => {
-  let mousePosX = 0,
-    mousePosY = 0,
-    mouseCircle = document.getElementById("mouse-circle");
 
-  document.onmousemove = (e) => {
-    mousePosX = e.pageX;
-    mousePosY = e.pageY;
-  };
+// document.addEventListener("DOMContentLoaded", () => {
+//   let mousePosX = 0,
+//     mousePosY = 0,
+//     mouseCircle = document.getElementById("mouse-circle");
 
-  let delay = 6,
-    revisedMousePosX = 0,
-    revisedMousePosY = 0;
+//   document.onmousemove = (e) => {
+//     mousePosX = e.pageX;
+//     mousePosY = e.pageY;
+//   };
 
-  function delayMouseFollow() {
-    requestAnimationFrame(delayMouseFollow);
+//   let delay = 6,
+//     revisedMousePosX = 0,
+//     revisedMousePosY = 0;
 
-    revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
-    revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+//   function delayMouseFollow() {
+//     requestAnimationFrame(delayMouseFollow);
 
-    mouseCircle.style.top = revisedMousePosY + "px";
-    mouseCircle.style.left = revisedMousePosX + "px";
-  }
-  delayMouseFollow();
-});
+//     revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+//     revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+
+//     mouseCircle.style.top = revisedMousePosY + "px";
+//     mouseCircle.style.left = revisedMousePosX + "px";
+//   }
+//   delayMouseFollow();
+// });

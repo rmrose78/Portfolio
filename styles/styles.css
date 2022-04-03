@@ -3,15 +3,35 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans:wght@300&display=swap");
 /* Color Palette */
-:root {
-  --color-white-: #fff;
 
+:root {
   /* https://hookagency.com/blog/website-color-schemes/ */
+  --background-: linear-gradient(#1f2833, #1f283395),
+    url("/assets/photos/space.jpg");
+  --color-white-: #fff;
   --color-1-: #12232e;
   --color-2-: #203647;
   --color-3-: #eefbfb;
   --color-4-: #4da8da;
   --color-5-: #007cc7;
+  --logo-text-: var(--color-5-);
+  --logo-span-: var(--color-4-);
+  --hamburger-: var(--color-4-);
+  --nav-text-: var(--color-5-);
+  --darkMode-icon-: var(--color-5-);
+  --text-title-: var(--color-5-);
+  --text-hello-: var(--color-4-);
+  --text-bio-: var(--color-3-);
+  --btn-border-: var(--color-5-);
+  --btn-background-: var(--color-2-);
+  --btn-text-: var(--color-5-);
+  --menu-background-: var(--color-2-);
+  --menu-text-: var(--color-4-);
+  --darkMode-menu-icon-: var(--color-4-);
+  --menu-background-: #12232e10;
+  --section-labels-: var(--color-4-);
+  --section-h1-: var(--color-4-);
+  --aboutMe-text-: var(--color-3-);
 
   /* https://hookagency.com/blog/website-color-schemes/ */
   /* --color-1-: #4d774e;
@@ -42,22 +62,42 @@
   --color-5-: #45a29e; */
 }
 
-:root[color-mode="dark"] {
+/* :root[color-mode="dark"] {
   --color-white-: #fff;
   --color-1-: #12232e;
   --color-2-: #203647;
   --color-3-: #eefbfb;
   --color-4-: #4da8da;
   --color-5-: #007cc7;
-}
+} */
 
 :root[color-mode="light"] {
-  --color-white-: #fff;
-  --color-3-: #12232e;
+  --background-: linear-gradient(#eefbfb99, #4da8da99),
+    url("/assets/photos/space_lightMode.jpg");
+  --color-white-: #12232e;
+  --color-1-: #12232e;
   --color-2-: #203647;
-  --color-1-: #eefbfb;
+  --color-3-: #eefbfb;
   --color-4-: #4da8da;
   --color-5-: #007cc7;
+  --logo-text-: var(--color-5-);
+  --logo-span-: var(--color-2-);
+  --hamburger-: var(--color-2-);
+  --darkMode-icon-: var(--color-2-);
+  --nav-text-: var(--color-2-);
+  --text-title-: var(--color-5-);
+  --text-hello-: var(--color-4-);
+  --text-bio-: var(--color-2-);
+  --btn-border-: var(--color-4-);
+  --btn-background-: var(--color-4-);
+  --btn-text-: var(--color-2-);
+  --menu-background-: var(--color-3-);
+  --menu-text-: var(--color-2-);
+  --darkMode-menu-icon-: var(--color-2-);
+  --menu-background-: #20364720;
+  --section-labels-: var(--color-5-);
+  --aboutMe-text-: var(--color-2-);
+  --section-h1-: var(--color-5-);
 }
 
 * {
@@ -78,8 +118,8 @@ body {
 }
 
 body {
-  background: linear-gradient(#1f2833, #1f283395),
-    url("/assets/photos/space.jpg");
+  /* background: linear-gradient(#1f2833, #1f283395),
+    url("/assets/photos/space.jpg"); */
   /* background: linear-gradient(#eefbfb99, #4da8da99),
     url("/assets/photos/space_lightMode.jpg"); */
   /* background: linear-gradient(#164a4199, #164a4195),
@@ -87,6 +127,7 @@ body {
   /* background: linear-gradient(#203647, #20364795),
     url("/assets/photos/mountain.jpg"); */
 
+  background: var(--background-);
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -118,17 +159,17 @@ body {
 }
 
 .title {
-  color: var(--color-5-);
+  color: var(--text-title-);
   font-size: 1;
 }
 
 .hello {
-  color: var(--color-4-);
+  color: var(--text-hello-);
   font-size: 8.5rem;
 }
 
 .bio {
-  color: var(--color-3-);
+  color: var(--text-bio-);
   font-size: 1rem;
   padding: 15px;
 }
@@ -156,15 +197,34 @@ body {
 }
 
 /* Darkmode */
-.darkMode-toggle {
+.darkMode-mobile--container {
+  display: block;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  left: 70px;
+  top: 45px;
 }
 
-.fa-sun {
+.fa-nav-icon {
+  color: var(--darkMode-icon-);
+  font-size: 2rem;
+}
+
+.fa-nav-icon:hover {
   color: var(--color-4-);
-  font-size: 1.5rem;
+}
+
+.fa-menu-icon {
+  color: var(--darkMode-menu-icon-);
+  font-size: 2rem;
+}
+
+@media (min-width: 720px) {
+  .darkMode-mobile--container {
+    display: none;
+  }
+  .fa {
+    font-size: 1.3rem;
+  }
 }
 
 /* Animista Library */
