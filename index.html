@@ -39,7 +39,7 @@
       </div>
       <div onclick="showHideMenu()" class="nav-toggle navbar-contents">
         <!-- <i class="fa-solid fa-bars"></i> -->
-        <div id="nav-icon4" onclick="dropdownToggle()" role="button">
+        <div id="nav-icon4" role="button">
           <span></span>
           <span></span>
           <span></span>
@@ -53,6 +53,9 @@
           </li>
           <li><a href="/pages/aboutMe.html">ABOUT ME</a></li>
           <li><a href="/pages/contact.html">CONTACT</a></li>
+          <li>
+            <i id="modeSwitch_1" class="fa fa-sun .fa-nav-icon"></i>
+          </li>
         </ul>
       </div>
       <div class="navbar-social">
@@ -106,13 +109,16 @@
               </ul>
             </div>
           </li>
+          <ul>
+            <li><i id="modeSwitch_2" class="fa fa-sun .fa-menu-icon"></i></li>
+          </ul>
         </ul>
       </div>
     </div>
-
-    <div class="darkMode-toggle">
-      <i class="fa-solid fa-sun"></i>
-    </div>
+<!-- 
+    <div class="darkMode-mobile--container">
+      <i id="toggleIcon" class="fa fa-sun"></i>
+    </div> -->
 
     <!-- info header -->
     <header>
@@ -135,7 +141,9 @@
     <!-- Cursor -->
     <div id="mouse-circle"></div>
 
+    <!-- scripts -->
     <script src="/scripts/hamburger.js"></script>
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/darkMode.js"></script>
   </body>
 </html>

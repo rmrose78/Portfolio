@@ -8,7 +8,7 @@ section {
   width: 100vw;
   display: flex;
   justify-content: center;
-  color: var(--color-4-);
+  color: var(--section-text-);
 }
 
 @media (min-width: 720px) {
@@ -73,7 +73,7 @@ section {
 
 .about-text {
   padding: 20px 12px;
-  color: var(--color-3-);
+  color: var(--aboutMe-text-);
 }
 
 @media (min-width: 400px) {
