@@ -519,7 +519,7 @@ body {
 }
 
 /* Radial cursor*/
-#mouse-circle {
+/* #mouse-circle {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -534,4 +534,4 @@ body {
   background-color: var(--color-4-);
   width: 20px;
   height: 20px;
-}
+} */
