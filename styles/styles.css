@@ -2,23 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans:wght@300&display=swap");
-/* Color Palette */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+/* Color Palette */
 :root {
-  /* https://hookagency.com/blog/website-color-schemes/ */
   --background-: linear-gradient(#1f2833, #1f283395),
     url("/assets/photos/space.jpg");
-  --color-white-: #fff;
   --color-1-: #12232e;
   --color-2-: #203647;
   --color-3-: #eefbfb;
   --color-4-: #4da8da;
   --color-5-: #007cc7;
+  --color-white-: #eefbfb;
   --logo-text-: var(--color-5-);
   --logo-span-: var(--color-4-);
   --hamburger-: var(--color-4-);
-  --nav-text-: var(--color-5-);
-  --darkMode-icon-: var(--color-5-);
+  --nav-text-: var(--color-4-);
+  --darkMode-icon-: var(--color-4-);
+  --text-name-: var(--color-3-);
   --text-title-: var(--color-5-);
   --text-hello-: var(--color-4-);
   --text-bio-: var(--color-3-);
@@ -32,61 +34,25 @@
   --section-labels-: var(--color-4-);
   --section-h1-: var(--color-4-);
   --aboutMe-text-: var(--color-3-);
-
-  /* https://hookagency.com/blog/website-color-schemes/ */
-  /* --color-1-: #4d774e;
-  --color-2-: #164a41;
-  --color-3-: #dadada;
-  --color-4-: #f1b24a;
-  --color-5-: #9dc88d; */
-
-  /* https://www.pinterest.com/pin/798614946435614249/ */
-  /* --color-1-: #329d9c;
-  --color-2-: #205072;
-  --color-3-: #cff4d2;
-  --color-4-: #7be495;
-  --color-5-: #56c596; */
-
-  /* https://colorhunt.co/palettes/popular */
-  /* --color-1-: #222831;
-  --color-2-: #393e46;
-  --color-3-: #eeeeee;
-  --color-4-: #00adb5;
-  --color-5-: #00acb554; */
-
-  /* https://visme.co/blog/website-color-schemes/ */
-  /* --color-1-: #0b0c10;
-  --color-2-: #1f2833;
-  --color-3-: #c5c6c7;
-  --color-4-: #66fcf1;
-  --color-5-: #45a29e; */
 }
-
-/* :root[color-mode="dark"] {
-  --color-white-: #fff;
-  --color-1-: #12232e;
-  --color-2-: #203647;
-  --color-3-: #eefbfb;
-  --color-4-: #4da8da;
-  --color-5-: #007cc7;
-} */
 
 :root[color-mode="light"] {
   --background-: linear-gradient(#eefbfb99, #4da8da99),
     url("/assets/photos/space_lightMode.jpg");
-  --color-white-: #12232e;
   --color-1-: #12232e;
   --color-2-: #203647;
   --color-3-: #eefbfb;
   --color-4-: #4da8da;
   --color-5-: #007cc7;
+  --color-white-: #12232e;
   --logo-text-: var(--color-5-);
   --logo-span-: var(--color-2-);
   --hamburger-: var(--color-2-);
   --darkMode-icon-: var(--color-2-);
   --nav-text-: var(--color-2-);
+  --text-name-: var(--color-2-);
   --text-title-: var(--color-5-);
-  --text-hello-: var(--color-4-);
+  --text-hello-: var(--color-5-);
   --text-bio-: var(--color-2-);
   --btn-border-: var(--color-4-);
   --btn-background-: var(--color-4-);
@@ -118,15 +84,6 @@ body {
 }
 
 body {
-  /* background: linear-gradient(#1f2833, #1f283395),
-    url("/assets/photos/space.jpg"); */
-  /* background: linear-gradient(#eefbfb99, #4da8da99),
-    url("/assets/photos/space_lightMode.jpg"); */
-  /* background: linear-gradient(#164a4199, #164a4195),
-    url("/assets/photos/working.jpg"); */
-  /* background: linear-gradient(#203647, #20364795),
-    url("/assets/photos/mountain.jpg"); */
-
   background: var(--background-);
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -156,6 +113,7 @@ body {
 
 .name {
   font-size: 2.5rem;
+  color: var(--text-name-);
 }
 
 .title {
@@ -226,6 +184,7 @@ body {
     font-size: 1.3rem;
   }
 }
+
 
 /* Animista Library */
 .text-focus-in {
