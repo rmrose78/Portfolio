@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&display=swap');
 /* Color Palette */
 :root {
   --background-: linear-gradient(#1f2833, #1f283395),
@@ -15,11 +16,15 @@
   --color-4-: #4da8da;
   --color-5-: #007cc7;
   --color-white-: #eefbfb;
-  --logo-text-: var(--color-5-);
+  --logo-text-: var(--color-3-);
   --logo-span-: var(--color-4-);
+  --logo-text-hover: var(--color-3-);
+  --logo-span-hover-: var(--color-3-);
   --hamburger-: var(--color-4-);
   --nav-text-: var(--color-4-);
+  --nav-text-hover: var(--color-3-);
   --darkMode-icon-: var(--color-4-);
+  --darkMode-icon-hover: var(--color-3-);
   --text-name-: var(--color-3-);
   --text-title-: var(--color-5-);
   --text-hello-: var(--color-4-);
@@ -37,7 +42,7 @@
 }
 
 :root[color-mode="light"] {
-  --background-: linear-gradient(#eefbfb99, #4da8da99),
+  --background-: linear-gradient(#eefbfb99 , #4da8da99),
     url("/assets/photos/space_lightMode.jpg");
   --color-1-: #12232e;
   --color-2-: #203647;
@@ -47,9 +52,13 @@
   --color-white-: #12232e;
   --logo-text-: var(--color-5-);
   --logo-span-: var(--color-2-);
+  --logo-text-hover: var(--color-4-);
+  --logo-span-hover-: var(--color-4-);
   --hamburger-: var(--color-2-);
-  --darkMode-icon-: var(--color-2-);
-  --nav-text-: var(--color-2-);
+  --darkMode-icon-: var(--color-4-);
+  --darkMode-icon-hover: var(--color-2-);
+  --nav-text-: var(--color-4-);
+  --nav-text-hover: var(--color-2-);
   --text-name-: var(--color-2-);
   --text-title-: var(--color-5-);
   --text-hello-: var(--color-5-);
@@ -168,7 +177,7 @@ body {
 }
 
 .fa-nav-icon:hover {
-  color: var(--color-4-);
+  color: var(--darkMode-icon-hover);
 }
 
 .fa-menu-icon {
@@ -181,7 +190,7 @@ body {
     display: none;
   }
   .fa {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 

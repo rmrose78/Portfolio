@@ -18,7 +18,7 @@ nav {
 }
 
 .navbar-logo--container {
-  width: 110px;
+  width: 170px;
   height: 23.2167px;
   display: flex;
   justify-content: center;
@@ -27,21 +27,23 @@ nav {
 
 .logo {
   color: var(--logo-text-);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   text-decoration: none;
+  font-family: 'Audiowide', cursive;
 }
 
 .logo:hover {
-  color: var(--color-4-);
+  color: var(--logo-text-hover);
 }
 
 .logo:hover > * {
-  color: var(--color-4-);
+  color: var(--logo-span-hover-);
 }
 
 .logo-span {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--logo-span-);
+  font-family: 'Audiowide', cursive;
 }
 
 .fa-bars {
@@ -51,17 +53,16 @@ nav {
 
 .navbar-contents li,
 .navbar-contents li a {
-  font-size: 0.75rem;
   text-decoration: none;
   list-style-type: none;
   color: var(--nav-text-);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   text-transform: capitalize;
 }
 
 .navbar-contents li a:hover,
 .navbar-toggle {
-  color: var(--color-4-);
+  color: var(--nav-text-hover);
   transition: all 0.3s ease 0s;
 }
 
@@ -95,9 +96,4 @@ nav {
   .navbar-contents li {
     padding: 0px 10px;
   }
-}
-
-/* Dropdown */
-
-.nav-dropdown {
 }
