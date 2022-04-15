@@ -1,12 +1,29 @@
 /* Nav Bar */
-
 nav {
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background: var(--nav-background-clr-);
+}
+
+nav.transparent {
+  background: transparent;
+}
+
+#nav-insideContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
   position: absolute;
-  width: 96%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  padding: 0 30px;
+  position: sticky;
 }
 
 .navbar-menu {
@@ -18,8 +35,6 @@ nav {
 }
 
 .navbar-logo--container {
-  width: 170px;
-  height: 23.2167px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +44,7 @@ nav {
   color: var(--logo-text-);
   font-size: 1.6rem;
   text-decoration: none;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
 
 .logo:hover {
@@ -40,10 +55,14 @@ nav {
   color: var(--logo-span-hover-);
 }
 
+.logo.logo-change {
+  color: var(--color-5-);
+}
+
 .logo-span {
   font-size: 1.1rem;
   color: var(--logo-span-);
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
 
 .fa-bars {
@@ -67,6 +86,22 @@ nav {
 }
 
 @media (min-width: 720px) {
+  nav {
+    background: none;
+  }
+  #nav-insideContainer {
+    position: fixed;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    background-color: var(--nav-background-clr-);
+  }
+  .logo {
+    white-space: nowrap;
+    padding-top: 10px;
+  }
   .nav-toggle {
     display: none;
   }
@@ -86,14 +121,29 @@ nav {
 
   .navbar-social {
     display: inline-block;
+    width: 170px;
   }
 
-  .navbar-menu ul,
+  .navbar-menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
   .navbar-social ul {
     display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .navbar-social i {
+    font-size: 2.5rem;
   }
 
   .navbar-contents li {
-    padding: 0px 10px;
+    padding: 15px 0;
+  }
+
+  .navbar-contents {
+    line-height: 2rem;
   }
 }

@@ -22,61 +22,68 @@
     <link rel="stylesheet" href="/styles/nav.css" />
     <link rel="stylesheet" href="/styles/menu.css" />
     <link rel="stylesheet" href="/styles/hamburger.css" />
+    <link rel="stylesheet" href="/styles/aboutMe.css">
+    <link rel="stylesheet" href="/styles/contactNEW.css">
+    <link rel="stylesheet" href="/styles/animationEffects.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <title>| Ryan Rose</title>
     <link rel="icon" href="/assets/faviconio-logo/favicon.ico" />
   </head>
   <body>
-    <!--  -->
-    <!-- Navbar -->
-    <nav>
-      <div class="navbar-logo--container navbar-contents">
-        <a class="logo" href="index.html"
-          >R<span class="logo-span">YAN</span> R<span class="logo-span"
-            >OSE</span
-          ></a
-        >
-      </div>
-      <div onclick="showHideMenu()" class="nav-toggle navbar-contents">
-        <!-- <i class="fa-solid fa-bars"></i> -->
-        <div id="nav-icon4" role="button">
-          <span></span>
-          <span></span>
-          <span></span>
+
+    <section id="hero-section">
+      <!-- Navbar -->
+    <nav id="nav">
+      <div id="nav-insideContainer">
+        <div class="navbar-logo--container navbar-contents">
+          <a id="logo-r"class="logo" href="index.html"
+            >R<span class="logo-span ">YAN</span> R<span class="logo-span"
+              >OSE</span
+            ></a
+          >
+        </div>
+        <div onclick="showHideMenu()" class="nav-toggle navbar-contents">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <div id="nav-icon4" role="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-menu--contents navbar-contents">
+            <li><a href="#">HOME</a></li>
+            <!-- <li>
+              <a href="/pages/portfolio.html">PORTFOLIO</a>
+            </li> -->
+            <li><a href="#about-section">ABOUT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-social">
+          <ul class="navbar-social--contents navbar-contents">
+            <li>
+              <a target="_blank" href="https://github.com/rmrose78"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="socialItems-Github--icon navbar-contents">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/ryan-rose-272626170/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-menu">
-        <ul class="navbar-menu--contents navbar-contents">
-          <li>
-            <i id="modeSwitch_1" class="fa fa-sun .fa-nav-icon"></i>
-          </li>
-          <li><a href="index.html">HOME</a></li>
-          <!-- <li>
-            <a href="/pages/portfolio.html">PORTFOLIO</a>
-          </li> -->
-          <!-- <li><a href="/pages/aboutMe.html">ABOUT ME</a></li> -->
-          <li><a href="/pages/contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-      <div class="navbar-social">
-        <ul class="navbar-social--contents navbar-contents">
-          <li>
-            <a target="_blank" href="https://github.com/rmrose78"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li class="socialItems-Github--icon navbar-contents">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ryan-rose-272626170/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
+      <!-- Dark mode button -->
+        <i id="modeSwitch_1" class="fa fa-sun .fa-nav-icon"></i>
+
+    </nav class="transparent">
     <!-- Menu -->
     <div id="menu-container">
       <div id="blur"></div>
@@ -86,12 +93,12 @@
       </div>
       <div class="menu-items">
         <ul>
-          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">HOME</a></li>
           <!-- <li>
             <a href="/pages/portfolio.html">PORTFOLIO</a>
           </li> -->
-          <!-- <li><a href="/pages/aboutMe.html">ABOUT ME</a></li> -->
-          <li><a href="/pages/contact.html">CONTACT</a></li>
+          <li><a href="#about-section">ABOUT ME</a></li>
+          <li><a href="#contact-section">CONTACT</a></li>
         </ul>
             <div class="menu-items--social">
               <ul>
@@ -115,30 +122,81 @@
           </ul>
         </ul>
       </div>
-    </div>
-<!-- 
-    <div class="darkMode-mobile--container">
-      <i id="toggleIcon" class="fa fa-sun"></i>
-    </div> -->
+    </section>
+    <!-- 
+      <div class="darkMode-mobile--container">
+        <i id="toggleIcon" class="fa fa-sun"></i>
+      </div> 
+    -->
 
     <!-- info header -->
     <header>
-      <div class="color-overlay">
         <div class="header-textContainer">
-          <span class="name">Ryan Rose</span><br />
-          <span class="title">Front-end Developer</span><br />
-          <span class="hello text-focus-in">Hello</span><br />
-          <div class="bio-container">
-            <span class="bio text-focus-in"
-              >I am based in Augusta, GA. I have a passion for learning and I'm
-              looking for an oppurtunity to prove that I can be assest in
-              Front-end development on your team.</span
-            >
-          </div>
+          <h3 id="hello">--HELLO</h3>
+          <h1 class="nameTitle">Ryan Rose</h1>
+          <h1 class="nameTitle">Frontend Developer</h1>
+        </div>
+    </header>
+    </div>
+  
+    <!-- About -->
+    <section id="about-section" class="section">
+      <div class="section-title">
+        <h1><span class="span-title-firstLetter">A</span>bout</h1>
+      </div>
+      <h2>Hi, I'm Ryan,</h2>
+      <p>Frontend Developer in Augusta, Ga.</p>
+      <p>My focus is in Javascript and I am currently learning the React framework with <a id="vetsWhoCode" target="_blank" href="https://vetswhocode.io/about/">#VetsWhoCode</a></p>
+      <p>
+        I am a husband, father, and developer who loves to learn and always looking for self improvment be it Frontend or in life.
+      </p>
+      <p>I love anything sci-fi related. I play guitar and prefer music that is loud and yells at me. I am a huge Colorado Avalanche hockey fan. I make my own beer.</p>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact-section" class="section">
+      <div class="section-title">
+        <h1><span class="span-title-firstLetter">C</span>ontact</h1>
+      </div>
+      <div id="form-bg-container">
+        <div class="form-container swing-in-top-fwd">
+          <form action="https://formsubmit.co/rmrose78@gmail.com" method="POST">
+            <div class="form-name--ctr">
+              <label for="name">Name</label>
+              <input type="text" name="name" placeholder="" required />
+            </div>
+
+            <div class="form-email--ctr">
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="" required />
+            </div>
+
+            <div class="form-message--ctr">
+              <label id="label-message" for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder=""
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <div class="button-ctr">
+              <button type="submit">Send</button>
+            </div>
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
+          </form>
         </div>
       </div>
-    </header>
-
+      <div id="copywrite">
+        <span>&copy; </span> RYAN ROSE 2022
+      </div>
+    </section>
     <!-- Cursor -->
     <div id="mouse-circle"></div>
 

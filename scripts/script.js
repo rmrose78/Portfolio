@@ -2,7 +2,22 @@
 
 function showHideMenu() {
   document.getElementById("menu-container").classList.toggle("show");
+  document.getElementById("nav").classList.toggle("transparent");
+  document.getElementById("logo-r").classList.toggle("logo-change");
 }
+
+// fade in effect nav
+
+// const checkpoint = 300;
+// window.addEventListener("scroll", () => {
+//   const currentScroll = window.pageXOffset;
+//   if (currentScroll == checkpoint) {
+//     opacity = 1 - currentScroll / checkpoint;
+//   } else {
+//     opacity = 0;
+//   }
+//   document.getElementById("nav").style.opacity = opacity;
+// });
 
 // cursor
 
