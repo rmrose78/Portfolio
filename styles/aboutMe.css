@@ -1,87 +1,93 @@
-html {
-  overflow-y: hidden;
-  box-sizing: border-box;
+#about-ctr {
+  width: 100%;
 }
 
-section {
-  height: 85vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  color: var(--section-text-);
-}
-
-@media (min-width: 720px) {
-  section {
-    align-items: center;
-  }
-}
-
-/* ------------- Container ------------- */
-
-#form-bg-container {
-  margin-top: 30vw;
-  position: absolute;
-  width: 95%;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 0;
-  z-index: 99;
-}
-
-.form-container > h1 {
+#about-ctr--picture {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  color: var(--color-4-);
-  padding: 20px;
+}
+#about-ctr--picture > img {
+  width: 50%;
+  padding: 10px 0;
+}
+
+#about-ctr--information {
+  width: 100%;
+  padding-right: 10px;
+}
+
+#about-ctr--information p {
+  font-size: 1.3rem;
+}
+@media (max-width: 720px) {
+  @media (max-height: 800px) {
+    #about-ctr--picture > img {
+      padding: 5px 0;
+    }
+
+    #about-ctr--information p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-height: 900px) {
+    #about-ctr--picture > img {
+      padding: 40px 0;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  #about-ctr--picture > img {
+    width: 40%;
+    padding: 20px 0;
+  }
 }
 
 @media (min-width: 720px) {
-  #form-bg-container {
-    width: 638.4px;
-    margin-top: 5vw;
+  #about-ctr--picture > img {
+    padding: 15px 0;
   }
 
-  .form-container {
-    width: 638.4px;
+  #about-ctr--information p {
+    font-size: 1.2rem;
   }
 }
-/* ------- About Me---------- */
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+@media (min-width: 900px) {
+  #about-ctr--picture > img {
+    width: 35%;
+  }
 }
 
-.img-container > img {
-  max-width: 50vw;
-  height: 100%;
-}
-
-.about-text {
-  padding: 20px 12px;
-  color: var(--aboutMe-text-);
-}
-
-@media (min-width: 400px) {
-  .img-container > img {
-    width: 200px;
+@media (min-width: 1050px) {
+  #about-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  #about-ctr--picture {
+    width: 40%;
   }
 
-  .about-text {
-    padding: 20px 20px;
+  #about-ctr--picture > img {
+    width: 60%;
+  }
+
+  #about-ctr--information {
+    width: 65%;
+  }
+
+  #about-ctr--information p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about-ctr--information p {
+    font-size: 1.8rem;
   }
 }

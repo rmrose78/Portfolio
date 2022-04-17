@@ -1,40 +1,44 @@
-html {
-  overflow-y: hidden;
-}
-
-section {
-  height: 85vh;
+#contact-section {
+  height: 100vh;
   width: 100vw;
+  background-color: var(--background-contact-);
   display: flex;
-  justify-content: center;
-  color: var(--section-labels-);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (min-width: 720px) {
-  section {
-    align-items: center;
-  }
+#map {
+  height: 30vh;
+  width: 100%;
 }
-
-/* Form */
 
 #form-bg-container {
-  margin-top: 15vw;
-  position: absolute;
   width: 95%;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-container-contactForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0;
-  z-index: 99;
+  font-size: 1.1rem;
+  width: 80%;
+  padding: 40px 0;
 }
 
 .form-container > h1 {
@@ -46,43 +50,59 @@ section {
   padding: 20px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   #form-bg-container {
-    width: 638.4px;
-    margin-top: 5vw;
-  }
-
-  .form-container {
-    width: 638.4px;
+    width: 80%;
   }
 }
+
+@media (min-width: 1020px) {
+  #form-bg-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #form-bg-container {
+    width: 60%;
+  }
+}
+
+/* Form */
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  padding: 30px 0;
 }
+
 form div {
   width: 100%;
   padding-bottom: 20px;
 }
 
+form label {
+  color: var(--form-label-text-);
+}
+
 form input,
 form textarea {
+  border: none;
   background: transparent;
-  color: var(--color-4-);
   outline: none;
   width: 100%;
+  color: var(--form-input-text-);
 }
 
 form textarea {
-  border-bottom: solid 1px var(--color-4-);
+  border-bottom: solid 1px var(--form-input-border-);
 }
 
 form input {
   line-height: 2rem;
-  border-bottom: solid 1px var(--color-4-);
+  border: none;
+  border-bottom: solid 1px var(--form-input-border-);
 }
 
 .button-ctr {
@@ -93,7 +113,8 @@ form input {
 button {
   padding: 12px 40px;
   margin-top: 20px;
-  border: solid 2px var(--btn-border-);
+  /* border: solid 2px var(--btn-border-); */
+  border: none;
   border-radius: 0.5rem;
   background: var(--btn-background-);
   color: var(--btn-text-);
@@ -103,5 +124,20 @@ button {
 
 button:hover {
   color: var(--color-2-);
-  background-color: var(--color-5-);
+  background-color: var(--btn-background-hover-);
+}
+
+/* Copywrite */
+
+#copywrite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Audiowide", cursive;
+  font-size: 0.8rem;
+}
+#copywrite span {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
 }

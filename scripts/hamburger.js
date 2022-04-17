@@ -1,4 +1,4 @@
-/*  Credit for hamburger animation to Jesse Couch (https://codepen.io/designcouch/pen/ExvwPY)  */
+/*  Credit for hamburger animation to Jesse Couch at (https://codepen.io/designcouch/pen/ExvwPY)  */
 
 $(document).ready(function () {
   $("#nav-icon4").click(function () {
