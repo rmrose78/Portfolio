@@ -30,8 +30,9 @@
   --text-nameTitle-: var(--color-3-);
   --text-hello-: var(--color-5-);
   --btn-border-: var(--color-5-);
-  --btn-background-: var(--color-2-);
-  --btn-text-: var(--color-5-);
+  --btn-background-: var(--color-4-);
+  --btn-text-: var(--color-3-);
+  --btn-background-hover-: var(--color-5-);
   --menu-background-: var(--color-2-);
   --menu-text-: var(--color-4-);
   --darkMode-menu-icon-: var(--color-4-);
@@ -40,6 +41,10 @@
   --section-h1-: var(--color-4-);
   --aboutMe-text-: var(--color-3-);
   --section-letter-title: var(--color-5-);
+  --form-label-text-: var(--color-4-);
+  --form-input-text-: var(--color-4-);
+  --form-input-border-: var(--color-4-);
+  --vetsWHoCode-text-: var(grey);
 }
 
 :root[color-mode="light"] {
@@ -62,12 +67,13 @@
   --darkMode-icon-hover: var(--color-5-);
   --nav-background-clr-: var(--color-4-);
   --nav-text-: var(--color-2-);
-  --nav-text-hover: var(--color-5-);
+  --nav-text-hover: var(--color-3-);
   --text-nameTitle-: var(--color-2-);
   --text-hello-: var(--color-5-);
   --btn-border-: var(--color-4-);
-  --btn-background-: var(--color-4-);
+  --btn-background-: var(--color-5-);
   --btn-text-: var(--color-2-);
+  --btn-background-hover-: var(--color-4-);
   --menu-background-: var(--color-3-);
   --menu-text-: var(--color-2-);
   --darkMode-menu-icon-: var(--color-2-);
@@ -76,6 +82,10 @@
   --aboutMe-text-: var(--color-2-);
   --section-h1-: var(--color-5-);
   --section-letter-title: var(--color-5-);
+  --form-label-text-: var(--color-1-);
+  --form-input-text-: var(--color-2-);
+  --form-input-border-: var(--color-5-);
+  --vetsWHoCode-text-: var(#113f83);
 }
 
 /*
@@ -214,7 +224,7 @@ ul {
 }
 
 #vetsWhoCode {
-  color: #113f83;
+  color: var(--vetsWHoCode-text-);
   text-decoration: none;
 }
 
@@ -224,16 +234,52 @@ ul {
 
 @media (min-width: 720px) {
   .header-textContainer {
-    width: 562.5px;
+    left: 65%;
   }
   .nameTitle {
-    color: var(--text-nameTitle-);
-    font-size: 4rem;
-    white-space: nowrap;
+    font-size: 2.5rem;
   }
 
   #hello {
-    color: var(--text-hello-);
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-textContainer {
+    left: 63%;
+  }
+  .nameTitle {
+    font-size: 3rem;
+  }
+
+  #hello {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-textContainer {
+    left: 60%;
+  }
+  .nameTitle {
+    font-size: 3.5rem;
+  }
+
+  #hello {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-textContainer {
+    left: 55%;
+  }
+  .nameTitle {
+    font-size: 4rem;
+  }
+
+  #hello {
     font-size: 4rem;
   }
 }
@@ -280,22 +326,22 @@ ul {
 }
 
 /* section styles */
-
 .section {
-  height: 93vh;
+  height: 100vh;
   width: 100vw;
   padding-top: 40px;
 }
 
-.section > * {
-  padding: 0.5rem 1rem;
+.section-container {
+  width: 100%;
+  margin: 10px;
 }
 
 .section-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   font-size: 4rem;
   font-family: "Audiowide", cursive;
 }
@@ -304,12 +350,35 @@ ul {
   color: var(--color-4-);
 }
 
+.span-title-firstLetter {
+  color: var(--section-letter-title);
+}
+
 @media (min-width: 720px) {
+  .section {
+    height: 100vh;
+  }
   .section-title {
     font-size: 6rem;
   }
+  .section-container {
+    width: 70%;
+    display: block;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 10px;
+  }
 }
 
-.span-title-firstLetter {
-  color: var(--section-letter-title);
+@media (min-width: 900px) {
+  .section-container {
+    margin-left: 230px;
+    width: 78%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-container {
+    width: 80%;
+  }
 }
