@@ -20,18 +20,19 @@ homeLink.addEventListener("click", menuToggle);
 aboutLink.addEventListener("click", menuToggle);
 contactLink.addEventListener("click", menuToggle);
 
-// fade in effect nav
+// Top scroll navbar
+window.addEventListener("scroll", function () {
+  const navSideContainer = document.querySelector("#nav-insideContainer");
+  const logoName = document.querySelector("#logo-name");
+  let windowPosition = window.scrollY > 0;
 
-// const checkpoint = 300;
-// window.addEventListener("scroll", () => {
-//   const currentScroll = window.pageXOffset;
-//   if (currentScroll == checkpoint) {
-//     opacity = 1 - currentScroll / checkpoint;
-//   } else {
-//     opacity = 0;
-//   }
-//   document.getElementById("nav").style.opacity = opacity;
-// });
+  navSideContainer.classList.toggle(
+    "nav-insideContainer-active",
+    windowPosition
+  );
+  logoName.classList.toggle("logo-hide", windowPosition);
+  navSideContainer.classList.toggle("navbar-contents-acitve", windowPosition);
+});
 
 // cursor
 
