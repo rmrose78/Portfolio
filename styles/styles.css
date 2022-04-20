@@ -23,6 +23,7 @@
   --logo-span-hover-: var(--color-3-);
   --hamburger-: var(--color-4-);
   --nav-background-clr-: var(--color-2-);
+  --nav-text-top-: #eefbfb12;
   --nav-text-: var(--color-4-);
   --nav-text-hover: var(--color-3-);
   --darkMode-icon-: var(--color-4-);
@@ -40,6 +41,7 @@
   --section-labels-: var(--color-4-);
   --section-h1-: var(--color-4-);
   --aboutMe-text-: var(--color-3-);
+  --skills-background-: var(--color-2-);
   --section-letter-title: var(--color-5-);
   --form-label-text-: var(--color-4-);
   --form-input-text-: var(--color-4-);
@@ -66,6 +68,7 @@
   --darkMode-icon-: var(--color-2-);
   --darkMode-icon-hover: var(--color-5-);
   --nav-background-clr-: var(--color-4-);
+  --nav-text-top-: #007bc750;
   --nav-text-: var(--color-2-);
   --nav-text-hover: var(--color-3-);
   --text-nameTitle-: var(--color-2-);
@@ -80,6 +83,7 @@
   --menu-background-: #20364720;
   --section-labels-: var(--color-5-);
   --aboutMe-text-: var(--color-2-);
+  --skills-background-: rgb(135, 178, 197);
   --section-h1-: var(--color-5-);
   --section-letter-title: var(--color-5-);
   --form-label-text-: var(--color-1-);
@@ -273,14 +277,18 @@ ul {
 
 @media (min-width: 1200px) {
   .header-textContainer {
-    left: 55%;
+    left: 50%;
   }
   .nameTitle {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   #hello {
     font-size: 4rem;
+  }
+
+  #modeSwitch_1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -333,7 +341,6 @@ ul {
 }
 
 .section-container {
-  width: 100%;
   margin: 10px;
 }
 

@@ -35,8 +35,8 @@
     <section id="hero-section">
       <!-- Navbar -->
     <nav id="nav">
-      <div id="nav-insideContainer">
-        <div class="navbar-logo--container navbar-contents">
+      <div id="nav-insideContainer" role="navigation">
+        <div id='logo-name' class="navbar-logo--container navbar-contents">
           <a id="logo-r"class="logo" href="index.html"
             >R<span class="logo-span ">YAN</span> R<span class="logo-span"
               >OSE</span
@@ -52,13 +52,13 @@
           </div>
         </div>
         <div class="navbar-menu">
-          <ul class="navbar-menu--contents navbar-contents">
-            <li><a href="#">HOME</a></li>
+          <ul id='nav-sectionText' class="navbar-menu--contents navbar-contents">
+            <li><a class='nav--section-link' href="#">HOME</a></li>
             <!-- <li>
               <a href="/pages/portfolio.html">PORTFOLIO</a>
             </li> -->
-            <li><a href="#about-section">ABOUT</a></li>
-            <li><a href="#contact-section">CONTACT</a></li>
+            <li><a class='nav--section-link' href="#about-section">ABOUT</a></li>
+            <li><a class='nav--section-link' href="#contact-section">CONTACT</a></li>
           </ul>
         </div>
 
@@ -131,30 +131,37 @@
 
     <!-- info header -->
     <header>
-        <div class="header-textContainer">
+        <div class="header-textContainer" role="introduction" tabindex="1" aria-roledescription="Portfolio of Ryan Rose a web developer">
           <h3 id="hello">--HELLO</h3>
           <h1 class="nameTitle">Ryan Rose</h1>
-          <h1 class="nameTitle">Frontend Developer</h1>
+          <h1 class="nameTitle">Developer</h1>
         </div>
     </header>
     </div>
   
     <!-- About -->
-    <section id="about-section" class="section">
-      <div class="section-container">
+    <section id="about-section" class="section" role="about section" aria-roledescription="About page" tabindex="1">
+      <div id="section-container-about" class="section-container">
         <div class="section-title">
           <h1><span class="span-title-firstLetter">A</span>bout</h1>
         </div>
         <div id=  "about-ctr">
           <div id="about-ctr--picture">
             <img src="/assets/photos/P1-modified.png" alt="Portrait photo of Ryan Rose">
+            <div id="skills-container">
+              <div class="skills">HTML</div>
+              <div class="skills">CSS</div>
+              <div class="skills">Javascript</div>
+              <div class="skills">MATLAB</div>
+              <div class="skills">Git</div>
+            </div>
           </div>
           <div id="about-ctr--information">
             <h2>Hi, I'm Ryan,</h2>
-            <p>Frontend Developer in Augusta, Ga.</p>
-            <p>My focus is in Javascript and I am currently learning the React framework with <a id="vetsWhoCode" target="_blank" href="https://vetswhocode.io/about/">#VetsWhoCode</a></p>
+  
+            <p> I am currently based in Augusta, Ga and currently learning Frontend development with <a id="vetsWhoCode" target="_blank" href="https://vetswhocode.io/about/">#VetsWhoCode</a></p>
             <p><br>
-              I am a husband, father, and developer who loves to learn and always looking for self improvment be it Frontend or in life.
+              I am a husband, father, and developer who loves to learn and always looking to improve be it in development or in life.
             </p><br>
             <p>I love anything sci-fi related. I play guitar and prefer music that is loud and yells at me. I am a huge Colorado Avalanche hockey fan. I make my own beer.</p>
           </div>
@@ -163,7 +170,7 @@
     </section>
 
     <!-- Contact form -->
-    <section id="contact-section" class="section">
+    <section id="contact-section" class="section" role="Contact Section" tabindex="1">
       <div id='section-container-contactForm' class="section-container">
         <div class="section-title">
           <h1><span class="span-title-firstLetter">C</span>ontact</h1>
