@@ -177,13 +177,41 @@ nav.transparent {
     padding-left: 5px;
   }
 
-  /* Fix this */
-  #nav--link-home .nav--link-textColor-active {
-    color: var(--nav-text-);
-  }
-
   .fa-brands {
     color: var(--nav-text-top-);
+  }
+
+  #nav--link-home.nav--link-textColor-active {
+    color: var(--nav-text-);
+  }
+  #nav--link-home:hover.nav--link-textColor-active {
+    color: var(--nav-text-hover);
+  }
+  #nav--link-about.nav--link-textColor-active {
+    color: var(--nav-text-);
+  }
+  #nav--link-about:hover.nav--link-textColor-active {
+    color: var(--nav-text-hover);
+  }
+  #nav--link-contact.nav--link-textColor-active {
+    color: var(--nav-text-);
+  }
+  #nav--link-contact:hover.nav--link-textColor-active {
+    color: var(--nav-text-hover);
+  }
+
+  #fa-linkedin-id.nav--link-textColor-active {
+    color: var(--nav-text-);
+  }
+  #nav--linkedin-id:hover.nav--link-textColor-active {
+    color: var(--nav-text-hover);
+  }
+
+  #fa-github-id.nav--link-textColor-active {
+    color: var(--nav-text-);
+  }
+  #nav--github-id:hover.nav--link-textColor-active {
+    color: var(--nav-text-hover);
   }
 
   /* #nav-insideContainer:hover .nav--section-link,
@@ -194,10 +222,6 @@ nav.transparent {
   /* .nav--section-link:hover {
     border-left: 10px solid var(--nav-text-hover);
   } */
-
-  .fa-brands:hover {
-    color: var(--nav-text-hover);
-  }
 }
 
 @media (min-width: 900px) {

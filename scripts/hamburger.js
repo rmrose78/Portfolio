@@ -5,3 +5,5 @@ $(document).ready(function () {
     $(this).toggleClass("open");
   });
 });
+
+// const hamburger = document.getElementById("nav-icon4");

@@ -35,7 +35,6 @@
   justify-content: center;
   font-size: 1.1rem;
   width: 80%;
-  padding: 40px 0;
 }
 
 .form-container > h1 {
@@ -62,6 +61,15 @@
 @media (min-width: 1200px) {
   #section-container-contactForm {
     width: 40%;
+  }
+
+  .form-name--ctr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-name--ctr > div {
+    width: 45%;
   }
 }
 
