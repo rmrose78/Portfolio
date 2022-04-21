@@ -27,7 +27,8 @@ menuLinks.forEach((link) => {
   link.addEventListener("click", menuToggle);
 });
 
-hamburgerContainer.addEventListener("click", menuToggle);
+hamburger.addEventListener("click", menuToggle);
+// hamburger.addEventListener("key: 13", menuToggle);
 homeLink.addEventListener("click", menuToggle);
 aboutLink.addEventListener("click", menuToggle);
 contactLink.addEventListener("click", menuToggle);
