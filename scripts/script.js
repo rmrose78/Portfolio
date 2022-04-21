@@ -4,6 +4,8 @@ const menuLinks = document.querySelectorAll("menu-link");
 const homeLink = document.getElementById("home-link");
 const aboutLink = document.getElementById("about-link");
 const contactLink = document.getElementById("contact-link");
+const navSideContainer = document.getElementById("nav-insideContainer");
+const logoName = document.getElementById("logo-name");
 
 function menuToggle() {
   document.getElementById("menu-container").classList.toggle("show");
@@ -21,9 +23,11 @@ aboutLink.addEventListener("click", menuToggle);
 contactLink.addEventListener("click", menuToggle);
 
 // Top scroll navbar
+const navLinkHome = document.getElementById("nav--link-home");
+const navLinkAbout = document.getElementById("nav--link-about");
+const navLinkContact = document.getElementById("nav--link-contact");
+
 window.addEventListener("scroll", function () {
-  const navSideContainer = document.querySelector("#nav-insideContainer");
-  const logoName = document.querySelector("#logo-name");
   let windowPosition = window.scrollY > 0;
 
   navSideContainer.classList.toggle(
@@ -32,32 +36,11 @@ window.addEventListener("scroll", function () {
   );
   logoName.classList.toggle("logo-hide", windowPosition);
   navSideContainer.classList.toggle("navbar-contents-acitve", windowPosition);
+
+  navLinkHome.classList.toggle(".nav--link-textColor-active", windowPosition);
+  navLinkAbout.classList.toggle(".nav--link-textColor-active", windowPosition);
+  navLinkContact.classList.toggle(
+    ".nav--link-textColor-active",
+    windowPosition
+  );
 });
-
-// cursor
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   let mousePosX = 0,
-//     mousePosY = 0,
-//     mouseCircle = document.getElementById("mouse-circle");
-
-//   document.onmousemove = (e) => {
-//     mousePosX = e.pageX;
-//     mousePosY = e.pageY;
-//   };
-
-//   let delay = 6,
-//     revisedMousePosX = 0,
-//     revisedMousePosY = 0;
-
-//   function delayMouseFollow() {
-//     requestAnimationFrame(delayMouseFollow);
-
-//     revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
-//     revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
-
-//     mouseCircle.style.top = revisedMousePosY + "px";
-//     mouseCircle.style.left = revisedMousePosX + "px";
-//   }
-//   delayMouseFollow();
-// });
