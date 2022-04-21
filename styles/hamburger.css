@@ -5,6 +5,10 @@
 @media (min-width: 720px) {
 }
 
+#hamburger-ctr {
+  padding: 3px;
+}
+
 #nav-icon4 {
   width: 30px;
   height: 20px;
