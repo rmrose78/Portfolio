@@ -31,7 +31,7 @@
   --text-nameTitle-: var(--color-3-);
   --text-hello-: var(--color-5-);
   --btn-border-: var(--color-5-);
-  --btn-background-: var(--color-4-);
+  --btn-background-: var(--color-5-);
   --btn-text-: var(--color-3-);
   --btn-background-hover-: var(--color-5-);
   --menu-background-: var(--color-2-);
@@ -75,8 +75,8 @@
   --text-hello-: var(--color-5-);
   --btn-border-: var(--color-4-);
   --btn-background-: var(--color-5-);
-  --btn-text-: var(--color-2-);
-  --btn-background-hover-: var(--color-4-);
+  --btn-text-: var(--color-3-);
+  --btn-background-hover-: var(--color-3-);
   --menu-background-: var(--color-3-);
   --menu-text-: var(--color-2-);
   --darkMode-menu-icon-: var(--color-2-);
