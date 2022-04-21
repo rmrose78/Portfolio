@@ -31,21 +31,20 @@
     <link rel="icon" href="/assets/faviconio-logo/favicon.ico" />
   </head>
   <body>
-
     <section id="hero-section">
       <!-- Navbar -->
     <nav id="nav">
       <div id="nav-insideContainer" role="navigation">
-        <div id='logo-name' class="navbar-logo--container navbar-contents">
+        <div id='logo-name' class="navbar-logo--container navbar-contents" tabindex="-1">
           <a id="logo-r"class="logo" href="index.html"
             >R<span class="logo-span ">YAN</span> R<span class="logo-span"
               >OSE</span
             ></a
           >
         </div>
-        <div id='hamburger-ctr' class="nav-toggle navbar-contents">
+        <div id='hamburger-ctr' class="nav-toggle navbar-contents" role="menu">
           <!-- <i class="fa-solid fa-bars"></i> -->
-          <div id="nav-icon4" role="button">
+          <div id="nav-icon4">
             <span></span>
             <span></span>
             <span></span>
@@ -53,12 +52,12 @@
         </div>
         <div class="navbar-menu">
           <ul id='nav-sectionText' class="navbar-menu--contents navbar-contents">
-            <li><a id="nav--link-home" class='nav--section-link' href="#">HOME</a></li>
+            <li><a id="nav--link-home" class='nav--section-link' href="#" role="link">HOME</a></li>
             <!-- <li>
               <a href="/pages/portfolio.html">PORTFOLIO</a>
             </li> -->
-            <li><a id="nav--link-about" class='nav--section-link' href="#about-section">ABOUT</a></li>
-            <li><a id="nav--link-contact" class='nav--section-link' href="#contact-section">CONTACT</a></li>
+            <li><a id="nav--link-about" class='nav--section-link' href="#about-section" role="link">ABOUT</a></li>
+            <li><a id="nav--link-contact" class='nav--section-link' href="#contact-section" role="link">CONTACT</a></li>
           </ul>
         </div>
 
@@ -66,14 +65,14 @@
           <ul class="navbar-social--contents navbar-contents">
             <li>
               <a target="_blank" href="https://github.com/rmrose78"
-                ><i id="fa-github-id" class="fa-brands fa-github"></i
+                ><i id="fa-github-id" class="fa-brands fa-github" role="link"></i
               ></a>
             </li>
             <li class="socialItems-Github--icon navbar-contents">
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/ryan-rose-272626170/"
-                ><i id="fa-linkedin-id" class="fa-brands fa-linkedin"></i
+                ><i id="fa-linkedin-id" class="fa-brands fa-linkedin" role="link"></i
               ></a>
             </li>
           </ul>
@@ -81,7 +80,7 @@
       </div>
 
       <!-- Dark mode button -->
-        <i id="modeSwitch_1" class="fa fa-sun .fa-nav-icon"></i>
+        <i id="modeSwitch_1" class="fa fa-sun .fa-nav-icon" role="toggle"></i>
 
     </nav class="transparent">
     <!-- Menu -->
@@ -93,32 +92,32 @@
       </div>
       <div class="menu-items">
         <ul>
-          <li><a id="home-link" class="menu-link" href="#">HOME</a></li>
+          <li><a id="home-link" class="menu-link" href="#" role="link">HOME</a></li>
           <!-- <li>
             <a class="menu-link" href="#">PORTFOLIO</a>
           </li> -->
-          <li><a id="about-link" class="menu-link" href="#about-section">ABOUT ME</a></li>
-          <li><a id="contact-link" class="menu-link" href="#contact-section">CONTACT</a></li>
+          <li><a id="about-link" class="menu-link" href="#about-section" role="link">ABOUT ME</a></li>
+          <li><a id="contact-link" class="menu-link" href="#contact-section" role="link">CONTACT</a></li>
         </ul>
             <div class="menu-items--social">
               <ul>
                 <li>
                   <a target="_blank" href="https://github.com/rmrose78"
-                  ><i class="fa-brands fa-github"></i
+                  ><i class="fa-brands fa-github" role="link"></i
                 ></a>
                 </li>
                 <li>
                   <a
                   target="_blank"
                   href="https://www.linkedin.com/in/ryan-rose-272626170/"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin" role="link"></i
                 ></a>
                 </li>
               </ul>
             </div>
           </li>
           <ul>
-            <li><i id="modeSwitch_2" class="fa fa-sun .fa-menu-icon"></i></li>
+            <li><i id="modeSwitch_2" class="fa fa-sun .fa-menu-icon" role="toggle"></i></li>
           </ul>
         </ul>
       </div>
@@ -142,6 +141,7 @@
     </div>
   
     <!-- About -->
+
     <section id="about-section" class="section" role="about section" aria-roledescription="About page" tabindex="1">
       <div id="section-container-about" class="section-container">
         <div class="section-title">
@@ -165,7 +165,7 @@
             <p class="indent_2">
               I am a husband, father, and developer who loves to learn and always looking to improve be it as a developer or in life.
             </p>
-            <p class="indent_1">My intrests: Anything sci-fi related. I play guitar and I will listen to most music but prefer the type that is loud and yelling at me. I am a huge Colorado Avalanche hockey fan. I brew my own beer.</p>
+            <p class="indent_1">My intrests: Anything sci-fi related. I play guitar and prefer loud music that yells at me. I am a huge Colorado Avalanche hockey fan. I brew my own beer.</p>
           </div>
         </div>
       </div>

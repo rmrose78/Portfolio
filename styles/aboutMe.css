@@ -9,9 +9,12 @@
   font-size: 1.15rem;
 }
 
+#about-ctr h2 {
+  font-size: 2rem;
+}
 #about-ctr--picture img {
-  width: 35%;
-  padding-bottom: 20px;
+  width: 40%;
+  padding-bottom: 15px;
 }
 
 #about-ctr--picture {
@@ -23,7 +26,7 @@
 }
 
 #about-ctr--information p {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 #skills-container {
@@ -72,7 +75,7 @@
   }
 
   #about-ctr--information p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 40px;
   }
 
