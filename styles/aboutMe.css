@@ -1,9 +1,8 @@
-#section-container-about {
-  background-color: tomato;
-}
-
 #about-ctr {
-  background-color: peachpuff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #about-ctr p {
@@ -11,16 +10,19 @@
 }
 
 #about-ctr--picture img {
-  width: 40vw;
+  width: 35%;
 }
 
 #about-ctr--picture {
-  height: 30vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: aquamarine;
+}
+
+#about-ctr--information p {
+  padding-bottom: 20px;
 }
 
 #skills-container {
@@ -36,4 +38,63 @@
   border-radius: 3px;
   padding: 8px 16px;
   margin: 3px;
+}
+
+@media (min-width: 550px) {
+  #about-ctr--information p {
+    font-size: 1.45rem;
+  }
+}
+
+@media (min-width: 950px) {
+  #about-ctr--picture img {
+    width: 25%;
+  }
+
+  #about-ctr--information p {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .indent_1 {
+    padding-left: 60px;
+  }
+
+  .indent_2 {
+    padding-right: 60px;
+  }
+
+  #about-ctr--information h2 {
+    font-size: 4rem;
+    padding-bottom: 40px;
+  }
+
+  #about-ctr--information p {
+    font-size: 2rem;
+    padding-bottom: 40px;
+  }
+
+  #about-ctr--picture img {
+    padding-left: 20px;
+    width: 45%;
+    padding-bottom: 40px;
+  }
+
+  #about-ctr--picture {
+    width: 1500px;
+  }
+
+  #about-ctr {
+    flex-direction: row;
+    height: 80vh;
+  }
+
+  #about-ctr--information {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
+  }
 }

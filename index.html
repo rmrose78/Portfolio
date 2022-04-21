@@ -53,12 +53,12 @@
         </div>
         <div class="navbar-menu">
           <ul id='nav-sectionText' class="navbar-menu--contents navbar-contents">
-            <li><a class='nav--section-link' href="#">HOME</a></li>
+            <li><a id="nav--link-home" class='nav--section-link' href="#">HOME</a></li>
             <!-- <li>
               <a href="/pages/portfolio.html">PORTFOLIO</a>
             </li> -->
-            <li><a class='nav--section-link' href="#about-section">ABOUT</a></li>
-            <li><a class='nav--section-link' href="#contact-section">CONTACT</a></li>
+            <li><a id="nav--link-about" class='nav--section-link' href="#about-section">ABOUT</a></li>
+            <li><a id="nav--link-contact" class='nav--section-link' href="#contact-section">CONTACT</a></li>
           </ul>
         </div>
 
@@ -132,9 +132,11 @@
     <!-- info header -->
     <header>
         <div class="header-textContainer" role="introduction" tabindex="1" aria-roledescription="Portfolio of Ryan Rose a web developer">
-          <h3 id="hello">--HELLO</h3>
+          <h3 id="hello">-- Hi, I'm --</h3>
           <h1 class="nameTitle">Ryan Rose</h1>
-          <h1 class="nameTitle">Developer</h1>
+          <div id="jobTitle-ctr">
+            <h1 class="jobTitle">Devoloper </h1>
+          </div>
         </div>
     </header>
     </div>
@@ -157,13 +159,13 @@
             </div>
           </div>
           <div id="about-ctr--information">
-            <h2>Hi, I'm Ryan,</h2>
+            <h2 class="indent_2">Hello,</h2>
   
-            <p> I am currently based in Augusta, Ga and currently learning Frontend development with <a id="vetsWhoCode" target="_blank" href="https://vetswhocode.io/about/">#VetsWhoCode</a></p>
-            <p><br>
-              I am a husband, father, and developer who loves to learn and always looking to improve be it in development or in life.
-            </p><br>
-            <p>I love anything sci-fi related. I play guitar and prefer music that is loud and yells at me. I am a huge Colorado Avalanche hockey fan. I make my own beer.</p>
+            <p class="indent_1"> I am currently based in Augusta, Ga and currently learning Frontend development with <a id="vetsWhoCode" target="_blank" href="https://vetswhocode.io/about/">#VetsWhoCode.</a></p>
+            <p class="indent_2">
+              I am a husband, father, and developer who loves to learn and always looking to improve be it as a developer or in life.
+            </p>
+            <p class="indent_1">I love anything sci-fi related. I play guitar and prefer music that is loud and yells at me. I am a huge Colorado Avalanche hockey fan. I make my own beer.</p>
           </div>
         </div>
       </div>
@@ -175,19 +177,18 @@
         <div class="section-title">
           <h1><span class="span-title-firstLetter">C</span>ontact</h1>
         </div>
+        <p></p>
         <div id="form-bg-container">
           <div class="form-container swing-in-top-fwd">
             <form action="https://formsubmit.co/rmrose78@gmail.com" method="POST">
               <div class="form-name--ctr">
                 <label for="name">Name</label>
-                <input type="text" name="name" placeholder="" required />
+                <input type="name" name="name" placeholder="" required />
               </div>
-  
               <div class="form-email--ctr">
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="" required />
               </div>
-  
               <div class="form-message--ctr">
                 <label id="label-message" for="message">Message</label>
                 <textarea
@@ -197,16 +198,12 @@
                   required
                 ></textarea>
               </div>
-  
               <div class="button-ctr">
                 <button type="submit">Send</button>
               </div>
+              
               <input type="hidden" name="_subject" value="New submission!" />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://yourdomain.co/thanks.html"
-              />
+              <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
             </form>
           </div>
         </div>
