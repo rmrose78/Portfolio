@@ -163,14 +163,6 @@ nav.transparent {
     line-height: 2rem;
   }
 
-  /* #nav-insideContainer:hover {
-    background-color: var(--nav-background-clr-);
-  } */
-
-  /* #nav-insideContainer:hover #logo-name {
-    visibility: visible;
-  } */
-
   .nav--section-link {
     color: var(--nav-text-top-);
     border: 10px solid transparent;

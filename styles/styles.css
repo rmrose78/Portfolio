@@ -40,25 +40,28 @@
   --menu-background-: #12232e10;
   --section-labels-: var(--color-4-);
   --section-h1-: var(--color-4-);
+  --about-imgCtr-border-: var(--color-5-);
   --aboutMe-text-: var(--color-3-);
-  --skills-background-: var(--color-2-);
+  --about-pic-ctr-: var(--color-2-);
+  --skills-background-: var(--color-1-);
   --section-letter-title: var(--color-5-);
   --form-label-text-: var(--color-53-);
   --form-input-text-: var(--color-3-);
   --form-input-border-: var(--color-3-);
-  --vetsWHoCode-text-: var(grey);
+  --vetsWHoCode-text-: var(--color-4-);
 }
 
 :root[color-mode="light"] {
   --background-: linear-gradient(#eefbfb99, #4da8da99),
     url("/assets/photos/space_lightMode.jpg");
   --background-default-: var(--color-3-);
-  --background-contact-: var(--color-4-);
+  --background-contact-: var(--color-6-);
   --color-1-: #12232e;
   --color-2-: #203647;
-  --color-3-: #eefbfb;
+  --color-3-: #dee2e5;
   --color-4-: #4da8da;
   --color-5-: #007cc7;
+  --color-6-: #b6c2c9;
   --color-default-: #12232e;
   --logo-text-: var(--color-3-);
   --logo-span-: var(--color-2-);
@@ -82,14 +85,16 @@
   --darkMode-menu-icon-: var(--color-2-);
   --menu-background-: #20364720;
   --section-labels-: var(--color-5-);
+  --about-pic-ctr-: var(--color-6-);
+  --about-imgCtr-border-: var(--color-4-);
   --aboutMe-text-: var(--color-2-);
-  --skills-background-: rgb(135, 178, 197);
+  --skills-background-: var(--color-4-);
   --section-h1-: var(--color-5-);
   --section-letter-title: var(--color-5-);
   --form-label-text-: var(--color-1-);
   --form-input-text-: var(--color-2-);
   --form-input-border-: var(--color-5-);
-  --vetsWHoCode-text-: var(#113f83);
+  --vetsWHoCode-text-: var(--color-5-);
 }
 
 /*
@@ -251,7 +256,7 @@ ul {
 
 @media (min-width: 720px) {
   .nameTitle {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   #hello {
