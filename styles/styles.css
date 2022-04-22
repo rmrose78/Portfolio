@@ -91,8 +91,8 @@
   --skills-background-: var(--color-4-);
   --section-h1-: var(--color-5-);
   --section-letter-title: var(--color-5-);
-  --form-label-text-: var(--color-1-);
-  --form-input-text-: var(--color-2-);
+  --form-label-text-: var(--color-5-);
+  --form-input-text-: var(--color-5-);
   --form-input-border-: var(--color-5-);
   --vetsWHoCode-text-: var(--color-5-);
 }
