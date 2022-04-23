@@ -19,7 +19,7 @@ const hamburger = document.getElementById("nav-icon4");
 function menuToggle() {
   document.getElementById("menu-container").classList.toggle("show");
   document.getElementById("nav").classList.toggle("transparent");
-  document.getElementById("logo-r").classList.toggle("logo-change");
+
   // hamburger.classList.toggle("open");
 }
 
