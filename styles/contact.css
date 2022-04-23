@@ -1,7 +1,14 @@
 #contact-section {
   height: 100vh;
-  width: 100vw;
   background-color: var(--background-contact-);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-container-contactForm {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,10 +16,9 @@
 }
 
 .glass-container {
-  width: 95%;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.2);
-  /* backdrop-filter: blur(5px); */
+  backdrop-filter: blur(10px);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
@@ -20,21 +26,14 @@
   justify-content: center;
 }
 
-#section-container-contactForm {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 95%;
-}
-
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-size: 1.1rem;
-  width: 80%;
+  width: 90vw;
+  padding: 0 3vw;
 }
 
 .form-container > h1 {
@@ -46,33 +45,6 @@
   padding: 20px;
 }
 
-@media (min-width: 720px) {
-  #section-container-contactForm {
-    width: 60%;
-  }
-}
-
-@media (min-width: 1020px) {
-  #section-container-contactForm {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1200px) {
-  #section-container-contactForm {
-    width: 40%;
-  }
-
-  .form-name--ctr {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .form-name--ctr > div {
-    width: 45%;
-  }
-}
-
 /* Form */
 
 form {
@@ -80,6 +52,7 @@ form {
   flex-direction: column;
   justify-content: center;
   padding: 30px 0;
+  width: 95%;
 }
 
 form div {
@@ -117,8 +90,6 @@ form input {
 
 button {
   padding: 12px 40px;
-  margin-top: 20px;
-  /* border: solid 2px var(--btn-border-); */
   border: none;
   border-radius: 0.5rem;
   background: var(--btn-background-);
@@ -144,4 +115,48 @@ button:hover {
 #copywrite span {
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive media queries */
+
+@media (max-height: 760px) {
+  #section-container-contactForm {
+    width: 90vw;
+    margin-bottom: 15px;
+  }
+
+  form textarea {
+    height: 10vh;
+  }
+}
+
+@media (min-width: 720px) {
+  #section-container-contactForm {
+    width: 60%;
+  }
+
+  #form-bg-container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1020px) {
+  #section-container-contactForm {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #section-container-contactForm {
+    width: 40%;
+  }
+
+  .form-name--ctr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-name--ctr > div {
+    width: 45%;
+  }
 }

@@ -45,13 +45,41 @@
 .skills {
   background-color: var(--skills-background-);
   border-radius: 3px;
-  padding: 8px 16px;
+  padding: 4px 8px;
   margin: 3px;
+}
+
+@media (max-height: 760px) {
+  #about-ctr--picture img {
+    width: 30%;
+  }
+
+  .skills {
+    background-color: var(--skills-background-);
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin: 3px;
+  }
+
+  #about-ctr--picture {
+    height: 30vh;
+  }
+
+  #about-ctr h2 {
+    font-size: 1.3rem;
+  }
+
+  #about-ctr p {
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 550px) {
   #about-ctr--information p {
     font-size: 1.45rem;
+  }
+  #about-ctr--picture img {
+    width: 30%;
   }
 }
 
@@ -59,11 +87,21 @@
   #about-ctr {
     padding: 0 15px;
   }
+  .skills {
+    background-color: var(--skills-background-);
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin: 8px;
+  }
+
+  #about-ctr--information p {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 950px) {
   #about-ctr--information p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
