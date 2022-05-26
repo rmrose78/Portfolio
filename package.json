@@ -2,9 +2,8 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "npx parcel src/index.html",
+    "dev": "parcel src/index.html",
     "prod": "parcel build src/index.html"
   },
   "repository": {
@@ -17,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/rmrose78/portfolio/issues"
   },
-  "homepage": "https://github.com/rmrose78/portfolio#readme"
+  "homepage": "https://github.com/rmrose78/portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1"
+  }
 }
