@@ -16,6 +16,7 @@
 #about-ctr--picture img {
   width: 40%;
   height: auto;
+  margin: 0 auto;
   padding-bottom: 15px;
 }
 
@@ -40,14 +41,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 15px;
   display: flex;
 }
 
-.skills {
+#skills-container > div {
   background-color: var(--skills-background-);
   border-radius: 3px;
   margin: 3px;
-  padding: 4px 8px;
+  padding: 5px 10px;
 }
 
 @media (max-height: 760px) {
@@ -72,6 +74,31 @@
 
   #about-ctr p {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-height: 680px) {
+  #about-ctr--picture img {
+    width: 30%;
+  }
+
+  .skills {
+    background-color: var(--skills-background-);
+    border-radius: 3px;
+    margin: 3px;
+    padding: 4px 8px;
+  }
+
+  #about-ctr--picture {
+    height: 30vh;
+  }
+
+  #about-ctr h2 {
+    font-size: 1.3rem;
+  }
+
+  #about-ctr p {
+    font-size: .9rem;
   }
 }
 

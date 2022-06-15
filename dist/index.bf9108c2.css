@@ -1,5 +1,5 @@
 .text-focus-in {
-  animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
+  animation: text-focus-in 1.5s cubic-bezier(.55, .085, .68, .53) both;
 }
 
 @keyframes text-focus-in {

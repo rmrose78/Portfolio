@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/rmrose78/portfolio#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
+    "node-sass": "^7.0.1",
+    "react": "^18.2.0"
   }
 }

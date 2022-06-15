@@ -2,7 +2,7 @@
 @import "https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans:wght@300&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@600&family=Expletus+Sans&family=Orbitron&display=swap";
 :root {
-  --background-: linear-gradient(#1f2833, #1f283395), url("space.1e75da18.jpg");
+  --background-: linear-gradient(#1f283395, #1f283395), url("astronaut.0790b388.jpeg");
   --background-default-: var(--color-1-);
   --background-contact-: var(--color-2-);
   --color-1-: #12232e;
@@ -46,7 +46,7 @@
 }
 
 :root[color-mode="light"] {
-  --background-: linear-gradient(#eefbfb99, #4da8da99), url("space_lightMode.3f90792a.jpg");
+  --background-: linear-gradient(#eefbfb50, #4da8da50), url("astronaut.0790b388.jpeg");
   --background-default-: var(--color-3-);
   --background-contact-: var(--color-6-);
   --color-1-: #12232e;
@@ -288,7 +288,8 @@ ul {
   }
 }
 
-.section {
+#section {
+  min-height: 100vh;
   padding-top: 40px;
 }
 

@@ -41,7 +41,6 @@ navSideHideAtTopOfPage = () => {
 // Top of window side nave show on hover
 const navSideShowHover = () => {
   if (window.scrollY == 0) {
-    console.log("i'm triggered");
     navSideContainer.classList.toggle("nav-insideContainer-active");
     logoName.classList.toggle("logo-hide");
     navSideContainer.classList.toggle("navbar-contents-acitve");

@@ -20,6 +20,7 @@
   
   <body>
     <section id="hero-section">
+      
       <!-- Navbar -->
     <nav id="nav">
       <div id="nav-insideContainer" role="navigation">
@@ -41,9 +42,6 @@
         <div class="navbar-menu">
           <ul id='nav-sectionText' class="navbar-menu--contents navbar-contents">
             <li><a id="nav--link-home" class='nav--section-link' href="#" role="link">HOME</a></li>
-            <!-- <li>
-              <a href="/pages/portfolio.html">PORTFOLIO</a>
-            </li> -->
             <li><a id="nav--link-about" class='nav--section-link' href="#about-section" role="link">ABOUT</a></li>
             <li><a id="nav--link-contact" class='nav--section-link' href="#contact-section" role="link">CONTACT</a></li>
           </ul>
@@ -71,6 +69,7 @@
         <i id="modeSwitch_1" class="fa fa-sun .fa-nav-icon" role="toggle"></i>
 
     </nav class="transparent">
+
     <!-- Menu -->
     <div id="menu-container">
       <div id="blur"></div>
@@ -81,9 +80,6 @@
       <div class="menu-items">
         <ul>
           <li><a id="home-link" class="menu-link" href="#" role="link">HOME</a></li>
-          <!-- <li>
-            <a class="menu-link" href="#">PORTFOLIO</a>
-          </li> -->
           <li><a id="about-link" class="menu-link" href="#about-section" role="link">ABOUT ME</a></li>
           <li><a id="contact-link" class="menu-link" href="#contact-section" role="link">CONTACT</a></li>
         </ul>
@@ -110,21 +106,18 @@
         </ul>
       </div>
     </section>
-    <!-- 
-      <div class="darkMode-mobile--container">
-        <i id="toggleIcon" class="fa fa-sun"></i>
-      </div> 
-    -->
 
     <!-- info header -->
     <header>
         <div class="header-textContainer" tabindex="0">
           <h3 id="hello">-- Hi, I'm --</h3>
-          <h1 class="nameTitle text-focus-in ">Ryan Rose</h1>
+          <h1 class="nameTitle text-focus-in">Ryan Rose</h1>
           <div id="jobTitle-ctr">
             <h1 class="jobTitle text-focus-in">Devoloper </h1>
           </div>
         </div>
+
+        <div id="space-image"></div>
     </header>
     </div>
   
@@ -137,13 +130,14 @@
         </div>
         <div id="about-ctr">
           <div id="about-ctr--picture">
-            <img src="/src/assets/photos/P1-modified.png" alt="Portrait photo of Ryan Rose">
+            <img src="../src/assets/photos/profile.png" alt="Portrait photo of Ryan Rose">
             <div id="skills-container">
-              <div class="skills">HTML</div>
-              <div class="skills">CSS</div>
-              <div class="skills">Javascript</div>
-              <div class="skills">MATLAB</div>
-              <div class="skills">Git</div>
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>Javascript</div>
+              <div>React</div>
+              <div>Next.js</div>
+              <div>Git</div>
             </div>
           </div>
           <div id="about-ctr--information">
@@ -206,7 +200,16 @@
     <!-- Cursor -->
     <div id="mouse-circle"></div>
 
-    <script src="/src/index.js"></script>
-    <script src="/src/scripts/darkMode.js"></script>
+  <script src="/src/index.js"></script>
+  <script src="/src/scripts/darkMode.js"></script>
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="/components/SpaceImage.js"></script>
+
   </body>
 </html>

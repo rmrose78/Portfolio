@@ -13,6 +13,7 @@ const DarMode_theme = ()=>{
     document.documentElement.setAttribute("color-mode", null);
     localStorage.setItem("theme", "dark");
 };
+_c = DarMode_theme;
 if (theme === "light") lightMode_theme();
 modeSwitch_1.addEventListener("click", (e)=>{
     theme = localStorage.getItem("theme"); //update d
@@ -24,5 +25,7 @@ modeSwitch_2.addEventListener("click", (e)=>{
     if (theme === "dark") lightMode_theme();
     else DarMode_theme();
 });
+var _c;
+$RefreshReg$(_c, "DarMode_theme");
 
 //# sourceMappingURL=index.68f35a34.js.map
